@@ -13,6 +13,9 @@
 		C6FEA9D71A07ED4A006033C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6FEA9D61A07ED4A006033C1 /* Images.xcassets */; };
 		C6FEA9DA1A07ED4A006033C1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6FEA9D81A07ED4A006033C1 /* LaunchScreen.xib */; };
 		C6FEA9E61A07ED4A006033C1 /* PostcardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FEA9E51A07ED4A006033C1 /* PostcardTests.swift */; };
+		C6FEA9F01A07F586006033C1 /* SagradaFamilia.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C6FEA9EF1A07F586006033C1 /* SagradaFamilia.jpeg */; };
+		C6FEA9F21A081950006033C1 /* AlbertEinsteinStamp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C6FEA9F11A081950006033C1 /* AlbertEinsteinStamp.jpg */; };
+		C6FEA9F41A0869A9006033C1 /* IMG_0393.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C6FEA9F31A0869A9006033C1 /* IMG_0393.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		C6FEA9DF1A07ED4A006033C1 /* PostcardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostcardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6FEA9E41A07ED4A006033C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6FEA9E51A07ED4A006033C1 /* PostcardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostcardTests.swift; sourceTree = "<group>"; };
+		C6FEA9EF1A07F586006033C1 /* SagradaFamilia.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SagradaFamilia.jpeg; sourceTree = "<group>"; };
+		C6FEA9F11A081950006033C1 /* AlbertEinsteinStamp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AlbertEinsteinStamp.jpg; sourceTree = "<group>"; };
+		C6FEA9F31A0869A9006033C1 /* IMG_0393.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0393.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,9 @@
 		C6FEA9CD1A07ED4A006033C1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C6FEA9F31A0869A9006033C1 /* IMG_0393.JPG */,
+				C6FEA9F11A081950006033C1 /* AlbertEinsteinStamp.jpg */,
+				C6FEA9EF1A07F586006033C1 /* SagradaFamilia.jpeg */,
 				C6FEA9CE1A07ED4A006033C1 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -161,9 +170,11 @@
 				TargetAttributes = {
 					C6FEA9C91A07ED4A006033C1 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 6V26WK3B65;
 					};
 					C6FEA9DE1A07ED4A006033C1 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 6V26WK3B65;
 						TestTargetID = C6FEA9C91A07ED4A006033C1;
 					};
 				};
@@ -192,7 +203,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6FEA9F41A0869A9006033C1 /* IMG_0393.JPG in Resources */,
 				C6FEA9D51A07ED4A006033C1 /* Main.storyboard in Resources */,
+				C6FEA9F01A07F586006033C1 /* SagradaFamilia.jpeg in Resources */,
+				C6FEA9F21A081950006033C1 /* AlbertEinsteinStamp.jpg in Resources */,
 				C6FEA9DA1A07ED4A006033C1 /* LaunchScreen.xib in Resources */,
 				C6FEA9D71A07ED4A006033C1 /* Images.xcassets in Resources */,
 			);
@@ -358,6 +372,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -369,6 +385,7 @@
 				INFOPLIST_FILE = PostcardTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Postcard.app/Postcard";
 			};
 			name = Debug;
@@ -377,6 +394,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -384,6 +403,7 @@
 				INFOPLIST_FILE = PostcardTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Postcard.app/Postcard";
 			};
 			name = Release;
